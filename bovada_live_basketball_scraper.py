@@ -154,7 +154,7 @@ sleeptime = 15 - int(time.time()) % 15
 time.sleep(sleeptime)
 
 
-with open('/Users/gzanuttinifrank/Documents/Stuff/Sports Betting/data/bovada/basketball/basketball_live_odds_bovada.csv', 'a') as f:
+with open('/Users/gzanuttinifrank/Documents/data/bovada/basketball/basketball_live_odds_bovada.csv', 'a') as f:
     while True:
         try:
             wait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'period')))
